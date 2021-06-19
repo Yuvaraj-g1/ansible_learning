@@ -2,7 +2,8 @@
 - hosts: all
   become: yes
   tasks:
-  - amazon.aws.ec2:
+  - name: Launch instance
+    amazon.aws.ec2:
     key_name: mykey
     instance_type: t2.micro
     image: ami-123456
