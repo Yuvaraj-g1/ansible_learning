@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Fetch /etc/shells
+      fetch:
+        src: /etc/shells
+        dest: /tmp/shells
